@@ -70,13 +70,13 @@
                 <!-- Links -->
                 <div class="nav-item form-inline fake">
                         <span class="header-search">
-                            <a href="#link" role="button" class="btn-srch"><i class="fa fa-search"></i></a>
-                            <input type="text" class="form-control" placeholder="Search" />
+                            <a href="#link" role="button" class="btn-srch" onclick="searchBox1()"><i class="fa fa-search"></i></a>
+                            <input type="text" class="form-control" id="searchBox1" placeholder="Search" />
                         </span>
                 </div>
                  <div class="nav-item dropdown fake">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><i class="fa fa-navicon"></i> quick service</span></a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a onclick="myFunction1()" class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><i class="fa fa-navicon"></i> quick service</span></a>
+                        <div id="myDropdown1"class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="#">Track Domestic Shipments</a>
                             <a class="dropdown-item" href="#">Track International Shipments</a>
                             <a class="dropdown-item" href="#">Find A Location</a>
@@ -104,13 +104,13 @@
                     </li>
                     <div class="nav-item form-inline">
                         <span class="header-search">
-                            <a href="#link" role="button" class="btn-srch"><i class="fa fa-search"></i></a>
-                            <input type="search" class="form-control" placeholder="Search" />
+                            <a href="#link" role="button" class="btn-srch" onclick="searchBox()"><i class="fa fa-search"></i></a>
+                            <input type="search" class="form-control" id="searchBox" placeholder="Search" />
                         </span>
                 </div>
                  <div class="nav-item dropdown">
                         <a onclick="myFunction()" class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><i class="fa fa-navicon"></i> quick service</span></a>
-                        <div id="myDropdown" class="dropdown-menu content" aria-labelledby="navbarDropdownMenuLink">
+                        <div id="myDropdown" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="#">Track Domestic Shipments</a>
                             <a class="dropdown-item" href="#">Track International Shipments</a>
                             <a class="dropdown-item" href="#">Find A Location</a>
@@ -119,7 +119,6 @@
                                 <a class="buttons" href="#"><button type="button" class="btn waves-effect waves-light"><span>Login</span></button></a>
                                 <a class="buttons" href="#"><button type="button" class="btn waves-effect waves-light"><span>Open Account</span></button></a>
                             </div>
-
                         </div>
                     </div>
                     </ul>
@@ -349,7 +348,7 @@
     </div>
     <!-- Optional JavaScript -->
 
-    <script>
+<script>
     /*opens the dropdown when user clicks it*/
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
@@ -369,9 +368,50 @@
                 }
             }
         }
-    </script>
-    <!-- back to top script -->
-    <script>
+
+        /*opens the dropdown when user clicks it for fake*/
+        function myFunction1() {
+            document.getElementById("myDropdown1").classList.toggle("show");
+
+        }
+    //close the dropdown if the user clicks out of it//
+        window.onclick = function(event) {
+            if (!event.target.matches('.nav-item')) {
+
+                var dropdowns = document.getElementById("myDropdown1");
+                var i;
+                for (i=0;i<dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        } 
+
+         /* seach box appears when user clicks */
+        function searchBox() {
+            var x = document.getElementById('searchBox');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            }
+            else {
+                x.style.display = 'none';
+            }
+        }
+
+            /* seach box appears when user clicks for fake*/
+        function searchBox1() {
+            var x = document.getElementById('searchBox1');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            }
+            else {
+                x.style.display = 'none';
+            }
+        }
+
+        /* back to top script */
         var amountScrolled = 50;
 
         $(window).scroll(function() {
