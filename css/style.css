@@ -61,6 +61,7 @@ li {
     .navbar-brand img {width: 200px;}
     .col-lg-2 {border-bottom: 1px solid #393939;}
     .col-lg-2 p {font-size: 9px !important;}
+    .cards .col-sm-12 {padding-top: 30px;}
 }
 
 @media only screen and (min-width: 65em) {
