@@ -55,7 +55,7 @@ li {
         border-bottom: 1px solid #800200;
     }
     .navbar .navbar-collapse .nav-link:hover { 
-        background-color: #800200;
+        background-color: #540705;
     }
     .navbar-nav .nav-item.form-inline {display: none;}
     .navbar-nav .nav-item.dropdown {display: none;}
