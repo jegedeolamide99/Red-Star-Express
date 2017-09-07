@@ -105,9 +105,6 @@ li {
     border: 0;
     color: #ce100d !important;
 }
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
 
 .dropdown {
     float: left;
@@ -187,7 +184,7 @@ li {
     width: 100%;
 }
 
-    .header-search input {
+    input[type=search] {
     position: absolute;
     background: #fff;
     padding: 14px;
