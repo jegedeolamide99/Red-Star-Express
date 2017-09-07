@@ -202,11 +202,7 @@ li {
 .header-search .form-control {
     display: none;
 }
-.header-search:hover .form-control, .header-search:focus .form-control{
-    display: block;
-    color: #ce100d;
-    border-bottom: #ce100d 2px solid;
-}
+
         
 .header-search input::placeholder {
     color: #ce100d;
