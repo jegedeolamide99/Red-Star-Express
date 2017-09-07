@@ -62,11 +62,20 @@ li {
     .col-lg-2 {border-bottom: 1px solid #393939;}
     .col-lg-2 p {font-size: 9px !important;}
     .cards .col-sm-12 {padding-top: 30px;}
+    #pre-footer .col-sm-6 {padding-top: 30px;}
 }
 
 @media only screen and (min-width: 65em) {
     .navbar .nav-item.form-inline.fake {display: none;}
     .navbar .nav-item.dropdown.fake {display: none;}
+}
+
+@media screen and (max-width: 36em) {
+    #pre-footer {display: none;}
+}
+
+@media screen and (min-width: 36em) {
+    #mob-prefooter {display: none;}
 }
 
 
@@ -519,6 +528,60 @@ p {
 .twitter p {
     color: #5f5f5f;
     margin-bottom: 2px;
+}
+
+/*mob-pre-footer*/
+#mob-pre-footer {
+    background-color: #111111;
+    padding-top: 60px;
+    padding-bottom:  60px;
+}
+
+#mob-pre-footer i {
+    color: #888888;
+    font-weight: bold;
+}
+
+#mob-pre-footer h5 {
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+button.accordion {
+    background-color: #111111 !important;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+button.accordion:active, button.accordion:hover {
+    background-color: #2d2c2c !important;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+div.panel {
+    padding: 18px 18px;
+    background-color: #111111;
+    display: none;
+    max-height: 1;
+    overflow: hidden;
+    transition: max-height 3s ease-out;
 }
 .footer {
     font-size: 10pt;
