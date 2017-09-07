@@ -256,7 +256,7 @@
                                         <h6 class="card-title">Sign up to Receive Newsletters</h6>
                                         <p class="card-text">Receive news and information from Red Star Express directly in your inbox</p>
                                     </div>
-                                    <div class="col-lg-12 col-sm-12">
+                                    <div class="col-lg-7 col-sm-12">
                                         <form>
                                         <div class="input-group">
                                             <input type="email" class="form-control" placeholder="Please enter your email address" aria-label="Pkease enter your email address" required>
@@ -410,7 +410,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
                         <span class="text-muted">Website Design by <a href="http://www.ckdigital.net">CKDigital</a></span>
                     </div>
-                    <button class="btn waves-effect waves-light" type="button"><a href="#"><i class="fa fa-chevron-up"></i></a></button>
+                    <button onclick="scrollToTop(); return false" id="myBtn" class="btn waves-effect waves-light" type="button"><i class="fa fa-chevron-up"></i></button>
                 </div>
             </div>
         </footer>
@@ -501,22 +501,16 @@
         }
 
         /* back to top script */
-        var amountScrolled = 50;
-
-        $(window).scroll(function() {
-            if ( $(window).scrollTop() > amountScrolled ) {
-                $('i.icon-arrow-up').fadeIn('slow');
-            } else {
-                $('i.icon-arrow-up').fadeOut('slow');
-            }
-        });
-
-        $('i.icon-arrow-up').click(function() {
-            $('html, body').animate({
-                scrollTop: 0
-            }, 700);
-            return false;
-        });
+        var timeOut;
+        var y = document.getElementById('myBtn');
+        function scrollToTop() {
+        if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+            window.scrollBy(0,-50);
+            y.style.opacity = 'none';
+            timeOut=setTimeout('scrollToTop()',20);
+        }
+        else clearTimeout(timeOut);
+        }
 </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.slim.min.js"></script>
