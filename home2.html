@@ -105,12 +105,12 @@
                     <div class="nav-item form-inline">
                         <span class="header-search">
                             <a href="#link" role="button" class="btn-srch"><i class="fa fa-search"></i></a>
-                            <input type="text" class="form-control" placeholder="Search" />
+                            <input type="search" class="form-control" placeholder="Search" />
                         </span>
                 </div>
                  <div class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><i class="fa fa-navicon"></i> quick service</span></a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a onclick="myFunction()" class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><i class="fa fa-navicon"></i> quick service</span></a>
+                        <div id="myDropdown" class="dropdown-menu content" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="#">Track Domestic Shipments</a>
                             <a class="dropdown-item" href="#">Track International Shipments</a>
                             <a class="dropdown-item" href="#">Find A Location</a>
@@ -348,6 +348,28 @@
         </footer>
     </div>
     <!-- Optional JavaScript -->
+
+    <script>
+    /*opens the dropdown when user clicks it*/
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+
+        }
+    //close the dropdown if the user clicks out of it//
+        window.onclick = function(event) {
+            if (!event.target.matches('.nav-item')) {
+
+                var dropdowns = document.getElementById("myDropdown");
+                var i;
+                for (i=0;i<dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
     <!-- back to top script -->
     <script>
         var amountScrolled = 50;
