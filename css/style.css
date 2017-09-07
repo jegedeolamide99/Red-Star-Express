@@ -49,12 +49,13 @@ li {
 @media only screen and (max-width: 61.9em) {
     .navbar .navbar-collapse {
         background-color: #ce100d;
+        width: 100%;
     }
     .navbar-collapse .nav-link {
         border-bottom: 1px solid #800200;
     }
-    .navbar .navbar-collapse .nav-link:hover {
-        color: #fff !important; 
+    .navbar .navbar-collapse .nav-link:hover { 
+        background-color: #800200;
     }
     .navbar-nav .nav-item.form-inline {display: none;}
     .navbar-nav .nav-item.dropdown {display: none;}
