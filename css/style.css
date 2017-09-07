@@ -612,7 +612,7 @@ div.panel {
     background-color: #393939;
 }
 
-button > a {
+button > i {
     font-weight: bold;
     color: #ce100d;
     font-size: 16px;
