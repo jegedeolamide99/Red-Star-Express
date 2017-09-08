@@ -8,8 +8,11 @@ html, body {
     background-color: #f4f4f4;
 }
 
+.top-bar .nav-link {
+    padding: .5rem .5rem;
+}
 .top-bar .nav-link::after {
-    /*content: url('../images/star2.png');*/
+    content: url('../images/star2.png');
     padding-top: 10px;
     padding-left: 5px;
     vertical-align: middle;
@@ -27,13 +30,17 @@ html, body {
 }
 
 .top-bar .nav-item a:focus {
-    font-weight: bold;
-    content: "";
-    width: 0; 
-    height: 0; 
+    border-bottom: 2px solid #b30906;
+    color: #000;
+    /*content: "";
+    width: 0;
+    height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 20px solid #f00;
+    border-bottom: 20px solid #b30906 ;
+    position: absolute;
+    top: -20px;
+    left: 10%;*/
 }
 .navbar-nav {
     width: 100%;
@@ -56,6 +63,8 @@ li {
     }
     .navbar .navbar-collapse .nav-link:hover { 
         background-color: #540705;
+        box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+        color: #fff !important;
     }
     .navbar-nav .nav-item.form-inline {display: none;}
     .navbar-nav .nav-item.dropdown {display: none;}
