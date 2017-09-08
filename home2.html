@@ -502,11 +502,9 @@
 
         /* back to top script */
         var timeOut;
-        var y = document.getElementById('myBtn');
         function scrollToTop() {
         if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
             window.scrollBy(0,-50);
-            y.style.opacity = 'none';
             timeOut=setTimeout('scrollToTop()',20);
         }
         else clearTimeout(timeOut);
