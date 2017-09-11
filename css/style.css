@@ -82,6 +82,15 @@ li {
         font-size: 10px !important;
         border-radius: 0px;
     }
+    .card-link {font-size: 12px !important;}
+    .card-title {font-size: 14px !important;}
+    .btn span {font-size: 12px !important;}
+    .display-5 {font-size: 21px !important;}
+    .sector {
+        font-size: 15px !important;
+        margin: 0px !important;
+    }
+    .dropdown-menu::before {display: none;}
 }
 
 @media only screen and (min-width: 65em) {
@@ -367,6 +376,7 @@ p.lead1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 300;
+    margin: 0 200px 0 200px;
 }
 #star {
     padding: 10px 0px 10px 0px;
@@ -437,6 +447,10 @@ p.lead1 {
     font-weight: 300;
 }
 
+.card-link:hover {
+    color: #111111;
+}
+
 a.text-muted::after {
     content: '|';
     margin-left: 25px; 
@@ -480,6 +494,13 @@ a.text-muted::after {
 
 .input-group-btn .btn {
     box-shadow: none !important;
+    background-color: #ce100d; 
+    color: #fff;
+}
+
+.input-group-btn .btn:hover {
+    background-color: #111111;
+    color: #ce100d;
 }
 
 #pre-footer {
@@ -592,6 +613,11 @@ button.accordion {
 
 button.accordion:active, button.accordion:hover {
     background-color: #2d2c2c !important;
+}
+
+.accordion h5 {
+    font-size: 1rem;
+    display: inherit;
 }
 
 button.accordion:after {
