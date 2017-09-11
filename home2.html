@@ -50,8 +50,8 @@
                     </div>
                     <div class="subsidiaries">
                         <div class="nav-item dropdown">
-                        <a onclick="myFunction()" class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><i class="fa fa-chevron-down"></i> SUBSIDIARIES</span></a>
-                        <div id="myDropdown" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a onclick="subDrop()" class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><i class="fa fa-chevron-down"></i> SUBSIDIARIES</span></a>
+                        <div id="subDrop" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="#">Red Star Express</a>
                             <a class="dropdown-item" href="#">Red Star Logistics</a>
                             <a class="dropdown-item" href="#">Red Star Freight</a>
@@ -271,10 +271,10 @@
                                     <div class="col-lg-7 col-sm-12">
                                         <form>
                                         <div class="input-group">
-                                            <input type="email" class="form-control" placeholder="Please enter your email address" aria-label="Pkease enter your email address" required>
+                                            <input type="email" class="form-control" placeholder="Please enter your email address" aria-label="Please enter your email address" required>
                                             <div class="invalid-feedback">Please provide a valid mail</div>
                                             <span class="input-group-btn">
-                                                <button class="btn waves-effect waves-light" style="background-color: #ce100d; color: #fff;" type="submit"><span>SUBSCRIBE</span></button>
+                                                <button class="btn" style="background-color: #ce100d; color: #fff;" type="submit"><span>SUBSCRIBE</span></button>
                                             </span>
                                         </div>
                                         </form>
@@ -417,7 +417,7 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
-                        <span class="text-muted">Copyright &copy Red Star Express Plc. All rights reserved.</span> <a style="color: #ce100d" href="#">Terms of Use</a> | <a style="color: #ce100d" href="#">Privacy Policy</a>
+                        <span class="text-muted">Copyright &copy Red Star Express Plc. All rights reserved.</span> <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
                         <span class="text-muted">Website Design by <a href="http://www.ckdigital.net">CKDigital</a></span>
@@ -460,6 +460,26 @@
             if (!event.target.matches('.nav-item')) {
 
                 var dropdowns = document.getElementById("myDropdown1");
+                var i;
+                for (i=0;i<dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        } 
+
+        /*opens the dropdown when user clicks it for subsidiaries*/
+        function subDrop() {
+            document.getElementById("subDrop").classList.toggle("show");
+
+        }
+    //close the dropdown if the user clicks out of it//
+        window.onclick = function(event) {
+            if (!event.target.matches('.nav-item')) {
+
+                var dropdowns = document.getElementById("subDrop");
                 var i;
                 for (i=0;i<dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
