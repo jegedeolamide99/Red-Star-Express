@@ -24,8 +24,8 @@ html, body {
     padding: .5rem 2rem;
 }
 
-.top-bar li:first-child {
-    padding: 0;
+.top-bar .nav .row > div:nth-child(1) > .nav-item a.nav-link{
+    padding-left: 1rem!important;
 }
 
 .top-bar a:hover {
@@ -61,6 +61,11 @@ li {
         background-color: #2b2c31;
         width: 100%;
     }
+    .navbar-toggler i.fa-navicon:focus {
+        transition: all 0.15s;
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+    }
     .navbar-collapse .nav-link {
         border-bottom: 1px solid #800200;
     }
@@ -71,7 +76,7 @@ li {
     }
     .navbar-nav .nav-item.form-inline {display: none;}
     .navbar-nav .nav-item.dropdown {display: none;}
-    .navbar-brand img {width: 200px;}
+    .navbar-brand img {width: 300px;}
     .col-lg-2 {border-bottom: 1px solid #393939;}
     .col-lg-2 p {font-size: 9px !important;}
     .cards .col-sm-12 {padding-top: 30px;}
@@ -91,18 +96,30 @@ li {
         margin: 0px !important;
     }
     .dropdown-menu::before {display: none;}
-}
-
-@media only screen and (min-width: 65em) {
-    .navbar .nav-item.form-inline.fake {display: none;}
-    .navbar .nav-item.dropdown.fake {display: none;}
-    .subsidiaries {display: none;}
+    .top-bar .nav-link {padding: 0.5rem 1rem;}
     .subsidiaries .dropdown span {
         color: #494949 !important;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
         font-size: 13px;
     }
+}
+
+@media only screen and (max-width: 21.75em) {
+    .btn-srch {padding-left: 2px !important;}
+}
+
+@media only screen and (max-width: 48em) {
+    .navbar .nav-link {padding-left: 2px !important;}
+}
+
+@media only screen and (min-width: 31.813em) {
+    .navbar .nav-link {padding-left: 2px !important;}
+}*/
+
+@media only screen and (min-width: 65em) {
+    .navbar .nav-item.form-inline.fake {display: none;}
+    .navbar .nav-item.dropdown.fake {display: none;}
 }
 
 @media screen and (max-width: 36em) {
@@ -138,7 +155,7 @@ li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    padding-left: 35px !important;
+    padding-left: 35px;
     text-align: center;
 }
 
@@ -208,6 +225,9 @@ li {
     background-color: #ce100d;
 }
 
+.modal-content {
+    background-color: #f4f4f4;
+}
 .button-group {
     padding: 0px 5px 0px 7px;
     margin: 20px 0px;
