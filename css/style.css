@@ -10,9 +10,9 @@ html, body {
 
 .top-bar .nav-link::after {
     content: url('../images/star2.png');
-    padding-top: 10px;
     padding-left: 5px;
     vertical-align: middle;
+    position: absolute;
 }
 
 .top-bar .nav-link {
@@ -20,6 +20,12 @@ html, body {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 13px;
+    position: relative;
+    padding: .5rem 2rem;
+}
+
+.top-bar li:first-child {
+    padding: 0;
 }
 
 .top-bar a:hover {
@@ -71,6 +77,11 @@ li {
     .cards .col-sm-12 {padding-top: 30px;}
     #pre-footer .col-sm-6 {padding-top: 30px;}
     .top-bar .nav .nav-item.subs {display: none;}
+    .form-control {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px !important;
+        border-radius: 0px;
+    }
 }
 
 @media only screen and (min-width: 65em) {
@@ -465,6 +476,10 @@ a.text-muted::after {
 
 .form-control:focus {
     border-color: #f40000 !important;
+}
+
+.input-group-btn .btn {
+    box-shadow: none !important;
 }
 
 #pre-footer {
