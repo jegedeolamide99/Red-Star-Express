@@ -26,7 +26,7 @@ html, body {
     color: #ce100d;
 }
 
-.top-bar .nav-item a:focus {
+.top-bar .nav-item.subs a:focus {
     border-bottom: 2px solid #b30906;
     color: #000;
     /*content: "";
@@ -52,7 +52,7 @@ li {
 
 @media only screen and (max-width: 61.9em) {
     .navbar .navbar-collapse {
-        background-color: #ce100d;
+        background-color: #2b2c31;
         width: 100%;
     }
     .navbar-collapse .nav-link {
@@ -60,7 +60,7 @@ li {
     }
     .navbar .navbar-collapse .nav-link:hover { 
         background-color: #540705;
-        box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+        box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19); 
         color: #fff !important;
     }
     .navbar-nav .nav-item.form-inline {display: none;}
@@ -70,11 +70,19 @@ li {
     .col-lg-2 p {font-size: 9px !important;}
     .cards .col-sm-12 {padding-top: 30px;}
     #pre-footer .col-sm-6 {padding-top: 30px;}
+    .top-bar .nav .nav-item.subs {display: none;}
 }
 
 @media only screen and (min-width: 65em) {
     .navbar .nav-item.form-inline.fake {display: none;}
     .navbar .nav-item.dropdown.fake {display: none;}
+    .subsidiaries {display: none;}
+    .subsidiaries .dropdown span {
+        color: #494949 !important;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 36em) {
@@ -126,7 +134,7 @@ li {
 .dropdown {
     float: left;
 }
-.dropdown span {
+.navbar .nav-item.dropdown span {
     color: #b30906;
 }
 
