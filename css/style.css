@@ -180,6 +180,17 @@ li {
 .modal-content {
     background-color: #f4f4f4;
 }
+
+.modal-footer .btn.btn-primary{
+    background-color: #ce100d;
+    border: none;
+}
+
+.modal-footer .btn.btn-primary:hover{
+    background-color: #1b1b1b;
+    color: #ce100d;
+    border: none;
+}
 .button-group {
     padding: 0px 5px 0px 7px;
     margin: 20px 0px;
@@ -752,6 +763,7 @@ a:hover {
 @media only screen and (min-width: 65em) {
     .navbar .nav-item.form-inline.fake {display: none;}
     .navbar .nav-item.dropdown.fake {display: none;}
+    .subsidiaries {display:none;}
 }
 
 @media screen and (max-width: 36em) {
