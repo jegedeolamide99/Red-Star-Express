@@ -45,6 +45,16 @@ html, body {
     top: -20px;
     left: 10%;*/
 }
+
+.subsidiaries .dropdown-menu {
+    background-color: #b30906;
+    text-transform: none; 
+    width: 160px;
+    padding: 5px;
+    margin: 0 0 0 0;
+    top: 67px;
+}
+
 .navbar-nav {
     width: 100%;
 }
@@ -55,81 +65,6 @@ li {
 .fake {
     display: inline;
 }
-
-@media only screen and (max-width: 61.9em) {
-    .navbar .navbar-collapse {
-        background-color: #2b2c31;
-        width: 100%;
-    }
-    .navbar-toggler i.fa-navicon:focus {
-        transition: all 0.15s;
-        transform: rotate(45deg);
-        transform-origin: 10% 10%;
-    }
-    .navbar-collapse .nav-link {
-        border-bottom: 1px solid #800200;
-    }
-    .navbar .navbar-collapse .nav-link:hover { 
-        background-color: #540705;
-        box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19); 
-        color: #fff !important;
-    }
-    .navbar-nav .nav-item.form-inline {display: none;}
-    .navbar-nav .nav-item.dropdown {display: none;}
-    .navbar-brand img {width: 300px;}
-    .col-lg-2 {border-bottom: 1px solid #393939;}
-    .col-lg-2 p {font-size: 9px !important;}
-    .cards .col-sm-12 {padding-top: 30px;}
-    #pre-footer .col-sm-6 {padding-top: 30px;}
-    .top-bar .nav .nav-item.subs {display: none;}
-    .form-control {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 10px !important;
-        border-radius: 0px;
-    }
-    .card-link {font-size: 12px !important;}
-    .card-title {font-size: 14px !important;}
-    .btn span {font-size: 12px !important;}
-    .display-5 {font-size: 21px !important;}
-    .sector {
-        font-size: 15px !important;
-        margin: 0px !important;
-    }
-    .dropdown-menu::before {display: none;}
-    .top-bar .nav-link {padding: 0.5rem 1rem;}
-    .subsidiaries .dropdown span {
-        color: #494949 !important;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        font-size: 13px;
-    }
-}
-
-@media only screen and (max-width: 21.75em) {
-    .btn-srch {padding-left: 2px !important;}
-}
-
-@media only screen and (max-width: 48em) {
-    .navbar .nav-link {padding-left: 2px !important;}
-}
-
-@media only screen and (min-width: 31.813em) {
-    .navbar .nav-link {padding-left: 2px !important;}
-}*/
-
-@media only screen and (min-width: 65em) {
-    .navbar .nav-item.form-inline.fake {display: none;}
-    .navbar .nav-item.dropdown.fake {display: none;}
-}
-
-@media screen and (max-width: 36em) {
-    #pre-footer {display: none;}
-}
-
-@media screen and (min-width: 36em) {
-    #mob-prefooter {display: none;}
-}
-
 
 .nav-link active a {
     position: relative;
@@ -155,7 +90,7 @@ li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    padding-left: 35px;
+    padding-left: 35px !important;
     text-align: center;
 }
 
@@ -188,6 +123,16 @@ li {
     top: 67px;
 }
 
+.dropdown.fake .dropdown-menu {
+    background-color: #b30906;
+    text-transform: none; 
+    width: 250px;
+    padding: 5px;
+    margin: 0 0 0 0;
+    top: 47px;
+    left: -47px;
+}
+
 .dropdown-menu::before{
     content: "";
     width: 0;
@@ -208,6 +153,13 @@ li {
     padding: 10px 20px 10px 10px;
 }
 
+.dropdown.fake .dropdown-item {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    border-bottom: 1px solid #800200;
+    color: #fff;
+    padding: 10px 20px 10px 10px;
+}
 .dropdown .dropdown-menu .dropdown-item:hover {
     box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
 }
@@ -732,4 +684,80 @@ a:hover {
 
 .shadow-1 {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 61.9em) {
+    .navbar .navbar-collapse {
+        background-color: #f5f5f5;
+        width: 100%;
+    }
+    .navbar-toggler i.fa-navicon:focus {
+        transition: all 0.15s;
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+    }
+    .navbar-collapse .nav-link {
+        border-bottom: 1px solid #800200;
+    }
+    .navbar .navbar-collapse .nav-link:hover { 
+        background-color: #540705;
+        box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19); 
+        color: #fff !important;
+    }
+    .navbar-nav .nav-item.form-inline {display: none;}
+    .navbar-nav .nav-item.dropdown {display: none;}
+    .navbar-brand img {width: 300px;}
+    .col-lg-2 {border-bottom: 1px solid #393939;}
+    .col-lg-2 p {font-size: 9px !important;}
+    .cards .col-sm-12 {padding-top: 30px;}
+    #pre-footer .col-sm-6 {padding-top: 30px;}
+    .top-bar .nav .nav-item.subs {display: none;}
+    .form-control {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px !important;
+        border-radius: 0px;
+    }
+    .card-link {font-size: 12px !important;}
+    .card-title {font-size: 14px !important;}
+    .btn span {font-size: 12px !important;}
+    .display-5 {font-size: 21px !important;}
+    .sector {
+        font-size: 15px !important;
+        margin: 0px !important;
+    }
+    .dropdown-menu::before {display: none;}
+    .top-bar .nav-link {padding: 0.5rem 1rem;}
+    .subsidiaries .dropdown span {
+        color: #494949 !important;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 21.75em) {
+    .btn-srch {padding-left: 2px !important;}
+}
+
+@media only screen and (max-width: 48em) {
+    .navbar .dropdown .nav-link {padding-left: 2px !important;}
+}
+
+@media only screen and (max-width: 31.813em) {
+    .navbar .dropdown .nav-link {padding-left: 2px !important;}
+}
+
+@media only screen and (min-width: 65em) {
+    .navbar .nav-item.form-inline.fake {display: none;}
+    .navbar .nav-item.dropdown.fake {display: none;}
+}
+
+@media screen and (max-width: 36em) {
+    #pre-footer {display: none;}
+}
+
+@media screen and (min-width: 36em) {
+    #mob-prefooter {display: none;}
 }
