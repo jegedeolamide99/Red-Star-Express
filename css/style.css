@@ -252,7 +252,6 @@ li {
 }
 .jumbotron {
     background-image: url('../images/image4.jpg');
-    height: 692px;
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -695,6 +694,89 @@ a:hover {
 
 .shadow-1 {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+/*About Us Page*/
+
+#about-banner {
+    width: 100%;
+}
+#about-banner .jumbotron {
+    background-image: url('../images/header.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+
+#about-banner .jumbotron h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.breadcrumb {
+    background: none;
+    padding: .75rem 0rem;
+}
+
+.breadcrumb a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.breadcrumb a:hover {
+    color: #f40000;
+}
+
+#info {
+    padding: 60px 0px 60px 0px;
+}
+#info p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #242424;
+}
+
+
+#vision .col-md-7{
+    padding: 90px 0px 90px 104.5px;
+}
+
+.value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+#mission p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 30px 0 0 0;
+}
+
+#vision .col-md-7 {
+    background-color: #888888;
+}
+
+#mission .col-md-5 {
+    padding: 30px 0px 30px 10px;
+}
+
+#mission img.img-fluid {width: 804.1px;}
+
+#mission p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 30px 0 0 0;
 }
 
 /*Media queries*/
