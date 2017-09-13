@@ -744,40 +744,48 @@ a:hover {
     color: #242424;
 }
 
-
-#vision .col-md-7{
-    padding: 90px 0px 90px 104.5px;
+#vision .col-sm-6 {
+    background-color: #f7f7f7;
+    padding: 0px;
 }
 
-.value {
+#vision .content {
+    padding: 90px 0px 90px 100px;
+}
+
+.title {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 28px;
-    font-weight: 400;
+    color: #000;
 }
-
-#mission p {
+#vision .content p {
+    max-width: 400px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
     font-weight: 300;
-    padding: 30px 0 0 0;
+    font-size: 18px;
+    padding-top: 30px;
+    color: #000;
 }
 
-#vision .col-md-7 {
-    background-color: #888888;
+#mission .col-sm-6 {
+    background-color: #f7f7f7;
+    padding: 0px;
 }
 
-#mission .col-md-5 {
-    padding: 30px 0px 30px 10px;
+#mission .content2 {
+    padding: 30px 100px 30px 30px;
 }
 
-#mission img.img-fluid {width: 804.1px;}
-
-#mission p {
+#mission .content2 p {
+    max-width: 400px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
     font-weight: 300;
-    padding: 30px 0 0 0;
+    font-size: 16px;
+    padding-top: 20px;
+    color: #000;
 }
+
 
 /*Media queries*/
 
