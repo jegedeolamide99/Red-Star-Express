@@ -755,8 +755,8 @@ a:hover {
 
 .title {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 28px;
+    font-weight: 400;
+    font-size: 18px;
     color: #000;
 }
 #vision .content p {
@@ -773,6 +773,10 @@ a:hover {
     padding: 0px;
 }
 
+#mission img {
+    height: 402px;
+}
+
 #mission .content2 {
     padding: 30px 100px 30px 30px;
 }
@@ -782,23 +786,106 @@ a:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 16px;
-    padding-top: 20px;
+    padding: 20px 0px;
     color: #000;
 }
 
+#Accordion h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 20px;
+    color: #000;
+}
 #Accordion h5::before {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #fe0000;
     float: left;
-    padding: 5px 10px;
+    padding: 0px 10px 0px 0px;
 }
 
 #Accordion h5:active::before {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
+#Accordion .collapse {
+    padding: 0px 25px;
+    border-bottom: 2px solid #c7c7c7;
+}
+#Accordion .collapse p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 0px;
+    color: #000;
+}
 
+#values {
+    padding: 90px 0px 60px 0px;
+}
+
+#values .col-sm-2 img {
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+}
+
+.caption {
+    padding: 30px 0px;
+}
+
+#values p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #575757;
+}
+
+#network {
+    color: #fff;
+    background-image: url('../images/banner2.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    padding: 90px 0px 60px 0px;
+}
+
+#network h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#network p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#competencies {
+    padding: 90px 0px 60px 0px;
+}
+
+#competencies .col-sm-2 img {
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+}
+
+.caption {
+    padding: 30px 0px;
+}
+
+#competencies p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #575757;
+}
 /*Media queries*/
 
 @media only screen and (max-width: 61.9em) {
