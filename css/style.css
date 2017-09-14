@@ -34,7 +34,6 @@ html, body {
 
 .top-bar .nav-item.subs a:focus {
     border-bottom: 2px solid #b30906;
-    color: #000;
     /*content: "";
     width: 0;
     height: 0;
@@ -886,13 +885,98 @@ a:hover {
     font-weight: 300;
     color: #575757;
 }
-/*Media queries*/
 
+/* Subsidiary home*/
+.others .top-bar {
+    border-top: #ce100d 2px solid;
+    background-image: url('../images/topbar.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+
+.others .top-bar .nav-link {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    position: relative;
+    padding: .5rem 2rem;
+}
+
+.others .navbar-nav {
+    margin-left: -30px;
+}
+.others .jumbotron {
+    background-image: url('../images/banner.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+.others .stress {
+    background-color: transparent;
+    width: 360px;
+    height: auto;
+    margin-top: 100px;
+    padding: 0px !important;
+    margin-left: -30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.others .jumbotron h3 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.lead a {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif
+}
+
+.lead span {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+.others .subtitle {
+    background-color: transparent;
+    width: 470px;
+    height: auto;
+    margin-top: 0px;
+    padding: 20px 0px !important;
+    margin-left: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+p.lead1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+.others .btn-redo {
+    margin-top: 40px;
+    background-color: #ce100d;
+    border-radius: 0px !important; 
+}
+
+.btn-red:hover {
+    background-color: #3d3c3c;
+}
+
+/*Media queries*/
 @media only screen and (max-width: 61.9em) {
     .navbar .navbar-collapse {
         background-color: #f5f5f5;
         width: 100%;
     }
+
     .navbar-toggler i.fa-navicon:focus {
         transition: all 0.15s;
         transform: rotate(45deg);
@@ -935,6 +1019,7 @@ a:hover {
         font-weight: 600;
         font-size: 13px;
     }
+    .others .navbar-brand.fake2{display: none;}
 }
 
 @media only screen and (max-width: 21.75em) {
@@ -953,6 +1038,7 @@ a:hover {
     .navbar .nav-item.form-inline.fake {display: none;}
     .navbar .nav-item.dropdown.fake {display: none;}
     .subsidiaries {display:none;}
+    .navbar-brand.fake {display: none;}
 }
 
 @media screen and (max-width: 36em) {
