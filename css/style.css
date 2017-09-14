@@ -761,6 +761,7 @@ a:hover {
     content: url('../images/star4.png');
     margin-left: 10px;
     vertical-align: middle;
+    position: absolute;
 }
 .title {
     font-family: 'Montserrat', sans-serif;
@@ -772,7 +773,7 @@ a:hover {
     max-width: 400px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 30px;
     color: #000;
 }
@@ -786,14 +787,15 @@ a:hover {
     content: url('../images/star4.png');
     margin-left: 10px;
     vertical-align: middle;
+    position: absolute;
 }
 
 #mission .col-sm-6.v img {
-    height: 402px;
+    height: 200px;
 }
 
 #mission .content2 {
-    padding: 30px 100px 30px 30px;
+    padding: 30px 30px 30px 30px;
 }
 
 #mission .content2 p {
@@ -801,8 +803,9 @@ a:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 16px;
-    padding: 20px 0px;
+    padding: 5px 0px;
     color: #000;
+    margin-bottom: 0px;
 }
 
 #Accordion h5 {
@@ -825,8 +828,11 @@ a:hover {
 }
 
 #Accordion .collapse {
-    padding: 0px 25px;
-    border-bottom: 2px solid #c7c7c7;
+    padding: 0px 0px 15px 25px;
+}
+
+#Accordion .item {
+    border-bottom: 1px solid #c7c7c7;
 }
 #Accordion .collapse p {
     font-family: 'Montserrat', sans-serif;
@@ -861,7 +867,7 @@ a:hover {
     -o-background-size:cover;
     background-size:cover;
     background-position:center;
-    padding: 90px 0px 60px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
 #network h1 {
@@ -874,6 +880,7 @@ a:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 300;
+    color: #686765;
 }
 
 #competencies {
@@ -1015,7 +1022,10 @@ p.lead1 {
         font-size: 10px !important;
         border-radius: 0px;
     }
-    .card-link {font-size: 12px !important;}
+    .card-link {
+        font-size: 12px !important;
+        position: relative;
+    }
     .card-title {font-size: 14px !important;}
     .btn span {font-size: 12px !important;}
     .display-5 {font-size: 21px !important;}
@@ -1043,8 +1053,15 @@ p.lead1 {
     }
     .col-sm-9 p {padding: 12px 18px;}
     .col-sm-4 {display: none;}
-    #vision .content {padding: 60px 30px;}
+    #vision .content {padding: 30px 30px;}
     .caption {padding: 0px;}
+    #mission .content2 {padding-right: 30px;}
+    #vision .col-sm-6 img {height: 200px;}
+    #vision .content p {padding-top: 10px;}
+    #info {padding: 30px 0px 30px 0px;}
+    #info p {font-size: 17px;}
+    #network h1 {font-size: 36px;}
+    #network {padding: 30px 0px 30px 0px;}
 }
 
 @media only screen and (max-width: 21.75em) {
