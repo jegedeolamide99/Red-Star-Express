@@ -307,7 +307,7 @@ p.lead1 {
     background-color: #3d3c3c;
 }
 #features{
-    background-color: #2b2c31;
+    background-color: #232323;
     margin-top: -35px;
     /*width: 100%;*/
     height: auto;
@@ -708,6 +708,7 @@ a:hover {
     -o-background-size:cover;
     background-size:cover;
     background-position:center;
+    margin: 0px;
 }
 
 #about-banner .jumbotron h1 {
@@ -743,15 +744,24 @@ a:hover {
     color: #242424;
 }
 
+#info .col-sm-4 {
+    margin-top: -40px;
+}
+
 #vision .col-sm-6 {
     background-color: #f7f7f7;
     padding: 0px;
 }
 
 #vision .content {
-    padding: 90px 0px 90px 100px;
+    padding: 60px 0px 60px 100px;
 }
 
+#vision h3::after {
+    content: url('../images/star4.png');
+    margin-left: 10px;
+    vertical-align: middle;
+}
 .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -772,7 +782,13 @@ a:hover {
     padding: 0px;
 }
 
-#mission img {
+#mission h3::after {
+    content: url('../images/star4.png');
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#mission .col-sm-6.v img {
     height: 402px;
 }
 
@@ -821,13 +837,7 @@ a:hover {
 }
 
 #values {
-    padding: 90px 0px 60px 0px;
-}
-
-#values .col-sm-2 img {
-    border-radius: 50%;
-    border: 1px solid #dbdbdb;
-    padding: 10px;
+    padding: 60px 0px 60px 0px;
 }
 
 .caption {
@@ -839,6 +849,7 @@ a:hover {
     font-size: 14px;
     font-weight: 300;
     color: #575757;
+    float: left;
 }
 
 #network {
@@ -866,10 +877,10 @@ a:hover {
 }
 
 #competencies {
-    padding: 90px 0px 60px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
-#competencies .col-sm-2 img {
+.caption img {
     border-radius: 50%;
     border: 1px solid #dbdbdb;
     padding: 10px;
@@ -884,6 +895,7 @@ a:hover {
     font-size: 14px;
     font-weight: 300;
     color: #575757;
+    float: left;
 }
 
 /* Subsidiary home*/
@@ -1020,6 +1032,19 @@ p.lead1 {
         font-size: 13px;
     }
     .others .navbar-brand.fake2{display: none;}
+    .col-sm-3 img {display: none;}
+    .col-sm-9 img {
+        float: left;
+        width: 54px;
+    }
+    .col-sm-9 .title {
+        float: left;
+        margin: 17px 0px 0px 17px;
+    }
+    .col-sm-9 p {padding: 12px 18px;}
+    .col-sm-4 {display: none;}
+    #vision .content {padding: 60px 30px;}
+    .caption {padding: 0px;}
 }
 
 @media only screen and (max-width: 21.75em) {
@@ -1039,6 +1064,7 @@ p.lead1 {
     .navbar .nav-item.dropdown.fake {display: none;}
     .subsidiaries {display:none;}
     .navbar-brand.fake {display: none;}
+    .col-sm-9 img {display: none;}
 }
 
 @media screen and (max-width: 36em) {
