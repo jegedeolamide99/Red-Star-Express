@@ -623,9 +623,8 @@ div.panel {
 }
 .footer {
     font-size: 10px;
-    padding: 30px 0px 30px 0px;
+    padding: 10px 0px 10px 0px;
     position: static;
-    bottom: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
@@ -641,7 +640,7 @@ div.panel {
     z-index: 999;
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 40px;
     width: 50px;
     height: 50px;
     -webkit-box-sizing: border-box;
@@ -790,10 +789,6 @@ a:hover {
     position: absolute;
 }
 
-#mission .col-sm-6.v img {
-    height: 200px;
-}
-
 #mission .content2 {
     padding: 30px 30px 30px 30px;
 }
@@ -887,10 +882,12 @@ a:hover {
     padding: 60px 0px 60px 0px;
 }
 
-.caption img {
+.caption .col-sm-3 img {
     border-radius: 50%;
     border: 1px solid #dbdbdb;
-    padding: 10px;
+    padding: 21px;
+    height: auto;
+    width: auto;
 }
 
 .caption {
@@ -990,7 +987,7 @@ p.lead1 {
 }
 
 /*Media queries*/
-@media only screen and (max-width: 61.9em) {
+@media only screen and (max-width: 990px) {
     .navbar .navbar-collapse {
         background-color: #f5f5f5;
         width: 100%;
@@ -1046,17 +1043,19 @@ p.lead1 {
     .col-sm-9 img {
         float: left;
         width: 54px;
+        height: 54px;
+        padding: 12px;
+        border-radius: 50%;
+        border: 1px solid #dbdbdb;
     }
     .col-sm-9 .title {
         float: left;
         margin: 17px 0px 0px 17px;
     }
     .col-sm-9 p {padding: 12px 18px;}
-    .col-sm-4 {display: none;}
-    #vision .content {padding: 30px 30px;}
+    #vision .content {padding: 60px 30px;}
     .caption {padding: 0px;}
     #mission .content2 {padding-right: 30px;}
-    #vision .col-sm-6 img {height: 200px;}
     #vision .content p {padding-top: 10px;}
     #info {padding: 30px 0px 30px 0px;}
     #info p {font-size: 17px;}
@@ -1090,4 +1089,42 @@ p.lead1 {
 
 @media screen and (min-width: 36em) {
     #mob-prefooter {display: none;}
+}
+
+@media screen and (min-width: 576px) and (max-width:989px) {
+    .col-sm-9.flex {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width:1060px) {
+    .container {
+        max-width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (min-width:991px){
+    .col-sm-9 img {display: none};
+}
+
+@media only screen and (max-width: 575px) {
+    #info .col-sm-4 {display: none;}
+}
+
+@media screen and (min-width:576px) and (max-width:990px) {
+    #info .col-sm-4 {
+        margin-top: -20px;
+    }
+    #info img {
+        height: 140px;
+        width: 140px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .footer .col-lg-8 p {float: left;}
+    .footer .col-lg-4 p {float: right;}
 }
