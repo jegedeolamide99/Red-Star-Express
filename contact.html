@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="redstar">
+    <div class="contact">
         <section class="top-bar">
             <div class="container">
                 <ul class="nav">
@@ -211,11 +211,11 @@
         <section id="contact-info">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-sm-12 col-12">
-                       <h1>Contact Information</h1>
+                    <div class="col-md-7 col-sm-12 col-12">
+                       <h3 class="display-5">Contact Information</h3>
                        <div class="row">
                            <div class="col-md-6 col-sm-6 col-12">
-                               <h3 class="display-5">Office Address</h3>
+                               <h3 class="display-6">Office Address</h3>
                                <div class="contacts">
                                    <div class="span"><h6>Head Office</h6>
                                    <p>70, International Airport Road<br> Lagos</p></div>
@@ -224,7 +224,7 @@
                                </div>
                            </div>
                            <div class="col-md-6 col-sm-6 col-12">
-                               <h3 class="display-5">Customer Service Line</h3>
+                               <h3 class="display-6">Customer Service Line</h3>
                                <div class="contacts">
                                    <div class="span"><p>01-2715670</p>
                                    <p>01-2714747</p></div>
@@ -247,47 +247,40 @@
                     </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-12 col-12">
-                        <div class="page">
-                            <div class="page__demo">
-                              <div class="main-container page__container">
-                                <div class="page__section">
-                                    <h5>Send us a message:</h5>
-                                  <label class="field field_type1">
-                                    <input class="field__input" placeholder="e.g. Jegede Olamide">
-                                    <span class="field__label-wrap">
-                                      <span class="field__label">Enter your name</span>
-                                    </span>
-                                  </label>
-                                </div>
-                                <div class="page__section">
-                                  <label class="field field_type2">
-                                    <input type="tel" class="field__input" placeholder="e.g. 080 0000 0000">
-                                    <span class="field__label-wrap">
-                                      <span class="field__label">Enter your phone number</span>
-                                    </span>
-                                  </label>
-                                </div>
-                                <div class="page__section">
-                                  <label class="field field_type3">
-                                    <input type="email" class="field__input" placeholder="e.g. jegedeolamide99@gmail.com">
-                                    <span class="field__label-wrap">
-                                      <span class="field__label">Enter your e-mail</span>  
-                                    </span>
-                                  </label>
-                                </div>      
-                                <div class="page__section">
-                                  <label class="field field_type4">
-                                    <textarea class="field__input" placeholder="e.g. Hello there, I would like to inquire about..." rows="5"></textarea>
-                                    <span class="field__label-wrap">
-                                      <span class="field__label">Enter your message</span>
-                                    </span>
-                                  </label>
-                                </div>
-                                <button type="button" class="btn btn-red btn-block">Send Message</button>            
-                              </div>
+                    <div class="col-md-5 col-sm-12 col-12">
+                        <div id="contact-form">
+                            <div class="container">
+                                <h5>Send A Message</h5>
+                                <hr>
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="fullName" class="col-sm-5 col-form-label">Your full name:</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="fullName" placeholder="e.g Ade Usman">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                            <label for="email" class="col-sm-5 col-form-label">Email address:</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" class="form-control" id="email" placeholder="e.g adeusman@mail.com">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                                <label for="phoneNNum" class="col-sm-5 col-form-label">Phone number:</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control" id="phoneNum" placeholder="e.g (+234) 80 0000 0000">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                    <label for="message" class="col-sm-5 col-form-label">Message:</label>
+                                                    <div class="col-sm-7">
+                                                        <textarea class="form-control" id="message" rows="8" placeholder="e.g Hello, I would like to inquire about..."></textarea>
+                                                        <button type="submit" class="btn btn-white">Send Message</button>
+                                                    </div>
+                                                </div>
+                                </form>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
