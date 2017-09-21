@@ -61,7 +61,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                         <div class="subsidiaries">
                             <div class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><i class="fa fa-caret-down"></i> Our Websites</span></a>
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span> Our Websites <i class="fa fa-caret-down"></i></span></a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="#">Red Star Express</a>
                                     <a class="dropdown-item" href="#">Red Star Logistics</a>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                         <div class="nav-item dropdown fake">
-                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><i class="fa fa-caret-down"></i> quick service</span></a>
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span> quick service <i class="fa fa-caret-down"></i></span></a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="#">Track Domestic Shipments</a>
                                 <a class="dropdown-item" href="#">Track International Shipments</a>
@@ -96,44 +96,45 @@
         <section class="navbar1">
             <div class="container">
 
-                <nav class="navbar navbar-expand-xl navbar-light">
+                <nav class="navbar navbar-expand-md navbar-light">
                     <!-- Brand -->
                     <a class="navbar-brand" href="#">
                     <img src="images/logo.jpg"/>
                 </a>
+
+                <!-- Links -->
+                <div class="nav-item form-inline fake">
+                    <span class="header-search">
+                        <a href="#link" role="button" class="btn-srch" data-toggle="modal" data-target="#exampleModal2"><i class="fa fa-search"></i></a>
+                    </span>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Search our site</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <input type="text" class="form-control" placeholder="Search" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content"
                         aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-navicon"></i>
                 </button>
 
-                    <!-- Links -->
-                    <div class="nav-item form-inline fake">
-                        <span class="header-search">
-                            <a href="#link" role="button" class="btn-srch" data-toggle="modal" data-target="#exampleModal2"><i class="fa fa-search"></i></a>
-                        </span>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Search our site</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <input type="text" class="form-control" placeholder="Search" />
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="collapse navbar-collapse" id="nav-content">
                         <ul class="navbar-nav navbar-right mr-auto mt-2 mt-lg-0">
                             <li class="nav-item">
@@ -192,7 +193,7 @@
                 </nav>
 
             </div>
-        </section>>
+        </section>
 
         <!-- About Banner -->
         <section id="about-banner">
