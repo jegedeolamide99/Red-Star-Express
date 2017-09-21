@@ -122,9 +122,9 @@ li {
     color: #ce100d !important; 
 }
 
-.navbar-toggler {
+.navbar-toggler, .navbar-toggler i {
     border: 0;
-    color: #ce100d !important;
+    color: #000 !important;
 }
 
 .dropdown {
@@ -1017,31 +1017,35 @@ p.lead1 {
     padding: 60px 0px;
 }
 
-#contact-info h1 {
-    font-weight: 700;
-    padding-bottom: 30px;
+#contact-info h3 {
+    margin-bottom: 15px;
 }
 
-#contact-info .display-5 {
+#contact-info .display-6 {
     color: #d73d3b;
+    font-size: 23px;
+    margin-top: 15px;
 }
 
 #contact-info .contacts {
-    padding-top: 20px;
+    padding-top: 13px;
 }
 .contacts h6 {
     font-size: 18px;
     font-weight: 600;
 }
 .contacts p {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     margin-bottom: 0.1rem;
 }
 .contacts .span {padding-bottom: 20px;}
-.contacts a {color: #d42e2b;} 
-.contacts a:hover {color: #000;}
-.location {padding-top: 20px;}
+.contact a {color: #d42e2b;} 
+.contact a:hover {color: #000;}
+.location {
+    padding-top: 10px;
+    font-size: 15px;
+}
 .location a {
     color: #d42e2b;
     margin-bottom: 10px;
@@ -1049,9 +1053,10 @@ p.lead1 {
 
 .map {
     position: relative;
-    height: 350px;
+    height: 190px;
     padding-top: 20%;
     overflow: hidden;
+    margin-top: 10px;
 }
 
 .map iframe {
@@ -1061,292 +1066,46 @@ p.lead1 {
     width: 100%;
     height: 100%;
 }
-/*
-* field
-*/
 
-/* reset */
-
-.field{
-    --uiFieldPaddingTop: var(--fieldPaddingTop, 0px);
-    --uiFieldPaddingRight: var(--fieldPaddingRight, 0px);
-    --uiFieldPaddingBottom: var(--fieldPaddingBottom, 0px);
-    --uiFieldPaddingLeft: var(--fieldPaddingLeft, 0px);
-  
-    --uiFieldBorderColor: var(--fieldBorderColor, transparent);
-    --uiFieldBorderTop: var(--fieldBorderTop, 0px);
-    --uiFieldBorderRight: var(--fieldBorderRight, 0px);
-    --uiFieldBorderBottom: var(--fieldBorderBottom, 0px);
-    --uiFieldBorderLeft: var(--fieldBorderLeft, 0px);
-  
-    --uiFieldBgColor: var(--fieldBgColor, transparent);
-    --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
-    --uiFieldAnimationDuration: var(--fieldAnimationDuration, .3s);
-    --uiFieldFonstSize: var(--fieldFontSize, 16px);
-  
-    position: relative;  
-    display: block;
-  }
-  
-  .field__input{
-    width: 100%;
-    box-sizing: border-box;
-    background-color: var(--uiFieldBgColor);
-  
-    /* for iOS */
-    appearance: none;
-    border-radius: 0;
-  
-    border-style: solid;
-    border-color: var(--uiFieldBorderColor);
-  
-    border-top-width: var(--uiFieldBorderTop);
-    border-right-width: var(--uiFieldBorderRight);
-    border-bottom-width: var(--uiFieldBorderBottom);
-    border-left-width: var(--uiFieldBorderLeft);
-  
-    padding-top: var(--uiFieldPaddingTop);
-    padding-right: var(--uiFieldPaddingRight);
-    padding-bottom: var(--uiFieldPaddingBottom);
-    padding-left: var(--uiFieldPaddingLeft);
-  
-    font-family: 'Montserrat', sans-serif;
-    font-size: 100%;
-    color: inherit;
-  }
-  
-  .field__input::-webkit-input-placeholder{ 
-    color: var(--uiFieldPlaceholderColor);
-    opacity: 0;
-  }
-  
-  .field__input::-moz-placeholder{ 
-    color: var(--uiFieldPlaceholderColor);
-    opacity: 0;
-  }
-  
-  .field__input:focus{
-    outline: none;  
-  }
-  
-  .field__input:focus::-webkit-input-placeholder{ 
-    transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration);
-    opacity: 1;
-  }
-  
-  .field__input:focus::-moz-placeholder{ 
-    transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration);
-    opacity: 1;
-  }
-  
-  .field__label-wrap{
-    height: 100%;
-    display: block;
-  }
-  
-  .field__label{
-    position: absolute;
-    top: calc(0px + var(--uiFieldPaddingTop) + var(--uiFieldBorderTop));
-    left: calc(0px + var(--uiFieldPaddingLeft) + var(--uiFieldBorderLeft));
-  
-    pointer-events: none;
-    font-size: .9em;
-  
-    transition: top var(--uiFieldAnimationDuration) cubic-bezier(0.9,-0.15, 0.1, 1.15), opacity var(--uiFieldAnimationDuration) ease-out;
-    will-change: top, opacity;
-  }
-  
-  .field__input:not(:placeholder-shown) ~ .field__label-wrap .field__label{
-    opacity: 0;
-    top: calc(0px + var(--uiFieldPaddingTop) + var(--uiFieldBorderTop));
-  }
-  
-  .field__input:focus ~ .field__label-wrap .field__label{
-    opacity: 1;
-    top: calc(-1 * calc(var(--uiFieldPaddingTop) + var(--uiFieldBorderTop) + 15px));
-  }
-  
-  /* type1 */
-  
-  .field_type1{
-    --uiFieldPaddingTop: var(--fieldPaddingTop, 15px);
-    --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
-    --uiFieldPaddingBottom: var(--fieldPaddingBottom, 15px);
-    --uiFieldPaddingLeft: var(--fieldPaddingLeft, 15px);
-  
-    --uiFieldBorderBottom: var(--fieldBorderBottom, 2px);
-  }
-  
-  .field_type1 .field__input{  
-    transition: border-color var(--uiFieldAnimationDuration) ease-out;
-    will-change: border-color;
-  }
-  
-  .field_type1 .field__input:focus{
-    --uiFieldBorderColor: var(--fieldBorderColorActive);
-  }
-  
-  /* type 2 */
-  
-  .field_type2{
-    --uiFieldBorderBottom: var(--fieldBorderBottom, 2px);
-    --uiFieldPaddingTop: var(--fieldPaddingTop, 5px);
-    --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
-    --uiFieldPaddingBottom: var(--fieldPaddingBottom, 10px);
-    --uiFieldPaddingLeft: var(--fieldPaddingLeft, 15px);  
-  }
-  
-  .field_type2 .field__label-wrap:after{
-    content: "";
-    width: 0;
-    height: var(--uiFieldBorderBottom);
-    background-color: var(--fieldBorderColorActive);
-  
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  
-    will-change: width;
-    transition: width var(--uiFieldAnimationDuration) ease-out;
-  }
-  
-  .field_type2 .field__input:focus ~ .field__label-wrap:after{
-    width: 100%;
-  }
-  
-  /* type 3 */
-  
-  .field_type3{
-    --uiFieldBorderBottom: var(--fieldBorderBottom, 2px);
-    --uiFieldPaddingTop: var(--fieldPaddingTop, 5px);
-    --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
-    --uiFieldPaddingBottom: var(--fieldPaddingBottom, 10px);
-    --uiFieldPaddingLeft: var(--fieldPaddingLeft, 15px);  
-  }
-  
-  .field_type3 .field__label-wrap:before, .field_type3 .field__label-wrap:after{
-    content: "";
-    width: 0;
-    height: var(--uiFieldBorderBottom);
-    background-color: var(--fieldBorderColorActive);
-  
-    position: absolute;
-    bottom: 0;
-  
-    will-change: width;
-    transition: width var(--uiFieldAnimationDuration) ease-out;
-  }
-  
-  .field_type3 .field__label-wrap:before{
-    left: 50%;
-  }
-  
-  .field_type3 .field__label-wrap:after{
-    right: 50%;
-  }
-  
-  .field_type3 .field__input:focus ~ .field__label-wrap:before,
-  .field_type3 .field__input:focus ~ .field__label-wrap:after{
-    width: 50%;
-  }
-  
-  /* type 4 */
-  
-  .field_type4{
-    --uiFieldPaddingTop: var(--fieldPaddingTop, 15px);
-    --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
-    --uiFieldPaddingBottom: var(--fieldPaddingBottom, 10px);
-    --uiFieldPaddingLeft: var(--fieldPaddingLeft, 15px); 
-    
-    --uiFieldBorderTop: var(--fieldBorderTop, 2px);
-    --uiFieldBorderRight: var(--fieldBorderRight, 2px);
-    --uiFieldBorderBottom: var(--fieldBorderBottom, 2px);
-    --uiFieldBorderLeft: var(--fieldBorderLeft, 2px);  
-  }
-  
-  .field_type4 .field__label-wrap:after{
-    content: "";
-    width: 100%;
-    height: 0;
-    box-sizing: border-box;
-    
-    border-width: var(--uiFieldBorderBottom);
-    border-style: solid;
-    border-color: var(--fieldBorderColorActive);
-      
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    
-    opacity: 0;
-    will-change: opacity, height;
-    transition: height var(--uiFieldAnimationDuration, .2s) ease-out, opacity var(--uiFieldAnimationDuration, .2s) ease-out;
-  }
-  
-  .field_type4 .field__input:focus ~ .field__label-wrap:after{
-    height: 100%;
-    opacity: 1;
-  }
   
   /*
   * demo styles
   */
   
-  .field{
-    --fieldBorderColor: #EFF0F4;
-    --fieldBorderColorActive: #232323;
-    --fieldPlaceholderColor: #EFF0F4;
-    color: #EFF0F4;
-  }
+  
   
   a{
     text-decoration: none;
     color: #000;
   }
   
-  a:hover, a:focus{
-    text-decoration: underline;
-  }
-  
-  .page{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .page__demo{
-    flex-grow: 2;
-    background-color: #a02929;
-    display: flex;
-    margin-top: 40px;
-  }
-  
-  .page__container{
-    width: 80%;  
-    max-width: 600px;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    margin: 0px auto;  
-  }
-  
-  .page__section:not(:first-child){
-    margin-top: 4rem;
-  }
+.contact #features {margin-top: 0px;}
 
-  .page__section h5 {
-      color: #EFF0F4;
-      margin-bottom: 30px;
-      text-align: center;
-      text-transform: uppercase;
-    }
+#contact-form {
+    background-color: #a02a2a;
+    padding: 30px 10px;
+    margin-top: 65px;
+}
+#contact-form h5 {color: #fff;}
+#contact-form hr {border: 1px solid #ba6f6a;}
 
-    .page .btn-red {background-color: #EFF0F4;}
+.form-group {
+    padding: 13px 0px;
+    margin-bottom: 0px;
+}
 
+#contact-form .col-form-label {
+    color: #fff;
+    margin-right: -30px;
+}
+#contact-form .btn-white {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 0.25rem 1.0rem;
+}
 /*Media queries*/
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width:991px) {
     .navbar .navbar-collapse {
         background-color: #f5f5f5;
         width: 100%;
@@ -1416,10 +1175,6 @@ p.lead1 {
     #network {padding: 30px 0px 30px 0px;}
 }
 
-@media screen and (max-width: 21.75em) {
-    .btn-srch {padding-left: 2px !important;}
-}
-
 @media screen and (max-width: 48em) {
     .navbar .dropdown .nav-link {padding-left: 2px !important;}
 }
@@ -1451,6 +1206,13 @@ p.lead1 {
 }
 
 @media screen and (min-width: 300px) and (max-width:1060px) {
+    .navbar1 .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar {
+        padding: 8px 0px 8px 0px;
+    }
     .container {
         max-width: 100%;
         padding-right: 30px;
