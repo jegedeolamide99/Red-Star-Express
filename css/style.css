@@ -25,7 +25,7 @@ html, body {
 }
 
 .top-bar .nav .row > div:nth-child(1) > .nav-item a.nav-link{
-    padding-left: 1rem!important;
+    padding-left: 0rem!important;
 }
 
 .top-bar a:hover {
@@ -1105,25 +1105,11 @@ p.lead1 {
 }
 /*Media queries*/
 
-@media screen and (max-width:991px) {
-    .navbar .navbar-collapse {
-        background-color: #f5f5f5;
-        width: 100%;
-    }
-
-    .navbar-toggler i.fa-navicon:focus {
-        transition: all 0.15s;
-        transform: rotate(45deg);
-        transform-origin: 10% 10%;
-    }
-    
-     
-    .navbar-brand img {width: 300px;}
+@media screen and (max-width:990px) {
     .col-lg-2 {border-bottom: 1px solid #393939;}
     .col-lg-2 p {font-size: 9px !important;}
     .cards .col-sm-12 {padding-top: 30px;}
     #pre-footer .col-sm-6 {padding-top: 30px;}
-    .top-bar {display: none;}
     .form-control {
         font-family: 'Montserrat', sans-serif;
         font-size: 10px !important;
@@ -1141,7 +1127,7 @@ p.lead1 {
         margin: 0px !important;
     }
     .dropdown-menu::before {display: none;}
-    .top-bar .nav-link {padding: 0.5rem 1rem;}
+    .top-bar .nav-link {padding: 0.5rem 1.3rem;}
     .others .navbar-brand.fake2{display: none;}
     .col-sm-3 img {display: none;}
     .col-sm-9 img {
@@ -1167,10 +1153,6 @@ p.lead1 {
     #network {padding: 30px 0px 30px 0px;}
 }
 
-@media screen and (max-width: 48em) {
-    .navbar .dropdown .nav-link {padding-left: 2px !important;}
-}
-
 @media screen and (max-width: 31.813em) {
     .navbar .dropdown .nav-link {padding-left: 2px !important;}
 }
@@ -1183,6 +1165,11 @@ p.lead1 {
 }
 
 @media screen and (max-width:767px) {
+    .top-bar {display: none;}
+    .navbar .navbar-collapse {
+        background-color: #f5f5f5;
+        width: 100%;
+    }
     .navbar-nav .nav-item.form-inline {display: none;}
     .navbar-nav .nav-item.dropdown {display: none;}
     .navbar-collapse .nav-link {
@@ -1191,11 +1178,70 @@ p.lead1 {
     }
 }
 
-@media screen and (min-width:768px) and (max-width:990px) {
-    .navbar .nav-link {padding-left: 3% !important;}
-    .navbar-collapse .nav-link {font-size: 12px;}
-    .btn-srch {padding-left: 0px;}
+@media screen and (min-width:768px) and (max-width:800px) {
+    .navbar .nav-link {
+        font-size: 12px;
+        padding-left: 15px !important;
+    }
+    .btn-srch {padding-left: 10px;}
 }
+
+@media screen and (min-width:801px) and (max-width:825px) {
+    .navbar .nav-link {
+        font-size: 12px;
+        padding-left: 21px !important;
+    }
+    .btn-srch {padding-left: 10px;}
+}
+
+@media screen and (min-width:826px) and (max-width:854px) {
+    .navbar .nav-link {
+        font-size: 13px;
+        padding-left: 20px !important;
+    }
+    .btn-srch {padding-left: 10px;}
+}
+
+@media screen and (min-width:855px) and (max-width:890px) {
+    .navbar .nav-link {
+        font-size: 13px;
+        padding-left: 26px !important;
+    }
+    .btn-srch {padding-left: 10px;}
+}
+
+@media screen and (min-width:891px) and (max-width:920px) {
+    .navbar .nav-link {
+        font-size: 14px;
+        padding-left: 27px !important;
+    }
+    .btn-srch {padding-left: 10px;}
+}
+
+@media screen and (min-width:921px) and (max-width:950px) {
+    .navbar .nav-link {
+        font-size: 14px;
+        padding-left: 33px !important;
+    }
+    .btn-srch {padding-left: 10px;}
+}
+
+@media screen and (min-width:951px) and (max-width:980px) {
+    .navbar .nav-link {
+        font-size: 15px;
+        padding-left: 33px !important;
+    }
+    .btn-srch {padding-left: 10px;}
+}
+
+@media screen and (min-width:981px) and (max-width:1100px) {
+    .navbar .nav-link {
+        font-size: 15px;
+        padding-left: 35px !important;
+    }
+    .btn-srch {padding-left: 10px;}
+}
+
 @media screen and (max-width: 36em) {
     #pre-footer {display: none;}
 }
@@ -1262,7 +1308,7 @@ p.lead1 {
     .navbar-brand img {width: 169px;}
 }
 
-@media screen and (min-width:429px) {
-    .navbar-brand img {width: 250px;}
+@media screen and (min-width: 429px) and (max-width: 1024px) {
+    .navbar-brand img {width: 210px;}
 }
 
